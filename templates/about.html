@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="icon" href="../static/logo.png">
+        <title>HealthFIT</title>
+    </head>
+    <body style="background-color: #343a40; color: white;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border-bottom: 2px solid rgba(255, 255, 255, 0.722);">
+            <div class="container-fluid">
+                <div class="logo">
+                    <img class="myimg" src="{{url_for('static',filename='nobg-logo.png')}}" alt="" style="height: 7vh; width: auto; margin-right: 1vw;">
+                </div>
+
+            <a class="navbar-brand" href="/">HealthFIT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                <a class="nav-link" href="/">Home </a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="/about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/developer">Developer</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </div>
+            </div>
+        </nav>
+        <div class="about-us" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px;">
+            <div class="about-us-img" style="width: 50%; justify-content: center; align-items: center; display: flex;">
+            <img src="../static/about.png" alt="about" style="height: 50vh; width: auto; margin: 30px; border-radius: 5px;">
+        </div>
+        <div class="about-us-text" style="text-align: justify; margin-right: 30px; width: 50%;">
+            <h1 style="display: flex; justify-self: center; align-self: center; color: #28a745; padding-bottom: 20px;">About Us</h1>
+            <p>Welcome to HealthFIT, your comprehensive personalized medical assistance system designed to revolutionize your health journey. At HealthFIT, we're dedicated to empowering individuals like you with cutting-edge technology that seamlessly detects your symptoms, predicts potential diseases, and provides tailored recommendations for precautions, medications, diet plans, and even personalized workout routines. Our mission is to enhance your well-being by providing holistic support and guidance every step of the way. With HealthFIT, take control of your health with confidence and embark on a journey towards a healthier, happier you.</p>
+        </div>
+        </div>
+        <div class="row" style="display: flex; align-items: center; justify-content: center; width: 100%; margin-bottom: 50px;">
+            <div class="col-sm-3" style="margin-left: 15px; margin-right: 15px;">
+                <div class="card" style="background-color: #28a745; cursor: pointer;" onmouseover="this.style.backgroundColor='#28a745'; this.querySelector('h5').style.color='#343a40';" >
+                <div class="card-body">
+                    <div class="header-logo" style="display: flex;">
+                <h5 class="card-title" style="color: #343a40;">Our Vision</h5>
+                <img src="../static/vision1.png" alt="viison" style="width: 2vw; height: auto; margin-left: 10px;">
+                </div>
+                <p class="card-text" style="text-align: justify;">Our vision is to pioneer a transformative healthcare experience, where individuals harness the capabilities of cutting-edge artificial intelligence and machine learning to proactively manage their well-being. We envision a future where personalized health insights empower users to make informed decisions, fostering a world where everyone has the knowledge and tools to optimize their health and lead fulfilling lives.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3" style="margin-left: 15px; margin-right: 15px;">
+                <div class="card" style="background-color: #28a745; cursor: pointer;" onmouseover="this.style.backgroundColor='#28a745'; this.querySelector('h5').style.color='#343a40';" >
+                <div class="card-body">
+                    <div class="header-logo" style="display: flex;">
+                    <h5 class="card-title" style="color: #343a40;">Our Mission</h5>
+                    <img src="../static/mission1.png" alt="mission" style="width: 2vw; height: auto; margin-left: 10px;">
+                    </div>
+                    <p class="card-text" style="text-align: justify;">At this website, our mission is to provide you with a seamless and intuitive platform that leverages the power of artificial intelligence and machine learning. We want to assist you in identifying potential health concerns based on your reported symptoms, all while offering a wealth of educational resources to enhance your health literacy and understanding of the importance of health and fitness to lead healhty lives.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-3" style="margin-left: 15px; margin-right: 15px;">
+                <div class="card" style="background-color: #28a745; cursor: pointer;" onmouseover="this.style.backgroundColor='#28a745'; this.querySelector('h5').style.color='#343a40';" >
+                <div class="card-body">
+                    <div class="header-logo" style="display: flex;">
+                    <h5 class="card-title" style="color: #343a40;">Our Values</h5>
+                    <img src="../static/values.png" alt="mission" style="width: 2vw; height: auto; margin-left: 10px;">
+                    </div>
+                    <p class="card-text" style="text-align: justify;">Our values embody our commitment to revolutionizing healthcare and empowering individuals to lead healthier, happier lives. We prioritize empowerment, integrity, innovation, collaboration, compassion, accessibility, and lifelong learning. These principles guide our mission to drive positive change, ensuring that everyone has the tools and knowledge to optimize their well-being and make informed decisions.</p>
+                </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="about-us" style="display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: center; margin-bottom: 50px;">
+            <div class="about-us-img" style="width: 50%; justify-content: center; align-items: center; display: flex;">
+                <img src="../static/mach.png" alt="about" style="height: 50vh; width: auto; margin: 30px; border-radius: 5px;">
+                </div>
+            <div class="about-us-text" style="text-align: justify; margin-left: 30px; width: 50%; float: right;">
+                <h1 style="display: flex; justify-self: center; align-self: center; color: #28a745; padding-bottom: 20px; text-align: right;">How did we do it?</h1>
+                <p>Our project was meticulously developed through a collaborative effort, combining expertise in healthcare, technology, and user experience design. Beginning with a comprehensive analysis of existing healthcare challenges and technological advancements, we identified opportunities to leverage artificial intelligence and machine learning to address these issues. Our team engaged in extensive research and prototyping to refine the concept and functionality of the HealthFIT platform, ensuring that it would meet the diverse needs of users. Through iterative development and feedback loops, we continuously refined and improved the platform, integrating user-centric design principles to enhance usability and accessibility. By prioritizing transparency and user empowerment, we aimed to create a seamless and intuitive platform that empowers individuals to take control of their health journey. Our project represents a culmination of innovative thinking, collaborative problem-solving, and a commitment to improving healthcare outcomes for all.</p>
+            </div>
+        </div>
+        <footer class="text-center" style="background-color: #28a745; height: 7vh; display: flex; justify-content: center; align-items: center; color: white; padding-top: 10px;">
+            <p>Thank you for choosing HealthFIT as your trusted health companion. We are here to empower you with knowledge, support, and a brighter, healthier future.</p>
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

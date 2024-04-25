@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="icon" href="../static/logo.png">
+        <title>HealthFIT</title>
+    </head>
+    <body style="background-color: #343a40; color: white;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border-bottom: 2px solid rgba(255, 255, 255, 0.722);">
+            <div class="container-fluid">
+                <div class="logo">
+                    <img class="myimg" src="{{url_for('static',filename='nobg-logo.png')}}" alt="" style="height: 7vh; width: auto; margin-right: 1vw;">
+                </div>
+
+            <a class="navbar-brand" href="/">HealthFIT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                <a class="nav-link" href="/">Home </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/contact">Contact <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/developer">Developer</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </div>
+            </div>
+        </nav>
+        <div class="contact" style="display: flex; align-items: center; justify-content: center; margin-top: 30px; margin-left: 30px; margin-bottom: 40px;">
+            <img src="../static/logo.png" alt="logo" style="height: 50vh; width: auto; border-radius: 5px; margin-right: 40px;">
+            <div class="head" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h1>HealthFIT</h1>
+            <h2 style="color: #28a745; margin-bottom: 10px;">Empowering your Health Journey</h2>
+            <p style="text-align: justify; margin-right: 30px;">If you have any inquiries, feedback, or need assistance, please don't hesitate to reach out to us. Our dedicated team at HealthFIT is here to support you on your health journey. Feel free to contact us via email at <span style="cursor: pointer;"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener">adminhealthfit010101010@healthfit.co.in</a></span>. We value your input and are committed to providing you with the best possible experience. Let's work together towards better health and well-being!</p>
+            </div>
+        </div>
+        <div class="row" style="display: flex; align-items: center; justify-content: center; width: 100%; margin-bottom: 50px; padding-bottom: 50px;">
+        <div class="col-sm-3" style="margin-left: 15px; margin-right: 15px;">
+            <div class="card" style="background-color: #343a40; cursor: pointer; height: 25vh; border: 2px solid #28a745; align-items: center;" onmouseover="this.style.backgroundColor='#28a745'; this.querySelector('h5').style.color='#343a40'; this.querySelector('a').style.color='white'" onmouseout="this.querySelector('a').style.color='white'; this.style.backgroundColor='#343a40'; this.querySelector('h5').style.color='#28a745'" >
+            <div class="card-body">
+                <div class="header-logo" style="display: flex; flex-direction: column;">
+                    <div class="head-logo" style="display: flex; flex-direction: row; margin-bottom: 20px;">
+                <h5 class="card-title" style="color: #28a745;">Email ID</h5>
+                <img src="../static/mail1.png" alt="mail" style="width: 2vw; height: auto; margin-left: 10px;">
+                </div>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener" style="color: white;">adminhealthfit010101010@healthfit.co.in</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3" style="margin-left: 15px; margin-right: 15px;">
+            <div class="card" style="background-color: #343a40; cursor: pointer; height: 25vh; border: 2px solid #28a745;" onmouseover="this.style.backgroundColor='#28a745'; this.querySelector('h5').style.color='#343a40'; this.querySelector('a').style.color='white'" onmouseout="this.querySelector('a').style.color='white'; this.style.backgroundColor='#343a40'; this.querySelector('h5').style.color='#28a745'" >
+            <div class="card-body">
+                <div class="header-logo" style="display: flex; flex-direction: column;">
+                    <div class="head-logo" style="display: flex; flex-direction: row; margin-bottom: 20px;">
+                <h5 class="card-title" style="color: #28a745;">Location (HQ)</h5>
+                <img src="../static/lox.png" alt="location" style="width: 2vw; height: auto; margin-left: 10px;">
+                </div>
+                <a href="https://www.google.com/maps/d/viewer?mid=1IEVwjHNKZcYI5LKHZfRSFXEKyzg&hl=en_US&ll=28.536795394594375%2C77.15845149999998&z=12" target="_blank" rel="noopener" style="color: white;">New Delhi,India</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3" style="margin-left: 15px; margin-right: 15px;">
+            <div class="card" style="background-color: #343a40; cursor: pointer; height: 25vh; border: 2px solid #28a745; align-items: center;" onmouseover="this.style.backgroundColor='#28a745'; this.querySelector('h5').style.color='#343a40'; this.querySelector('a').style.color='white'" onmouseout="this.querySelector('a').style.color='white'; this.style.backgroundColor='#343a40'; this.querySelector('h5').style.color='#28a745'" >
+            <div class="card-body">
+                <div class="header-logo" style="display: flex; flex-direction: column;">
+                    <div class="head-logo" style="display: flex; flex-direction: row; margin-bottom: 20px;">
+                <h5 class="card-title" style="color: #28a745;">Customer Support</h5>
+                <img src="../static/cust.png" alt="phone" style="width: 2vw; height: auto; margin-left: 10px;">
+                </div>
+                <a href="tel:+91-9876543210" target="_blank" rel="noopener" style="color: white;">+91-9876543210</a>
+                <a href="tel:+91-9111334065" target="_blank" rel="noopener" style="color: white;">+91-9111334065</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center" style="background-color: #28a745; height: 7vh; display: flex; justify-content: center; align-items: center; color: white; padding-top: 10px; position: fixed; bottom: 0px; width: 105%;">
+            <p>Thank you for choosing HealthFIT as your trusted health companion. We are here to empower you with knowledge, support, and a brighter, healthier future.</p>
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
